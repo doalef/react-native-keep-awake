@@ -2,7 +2,7 @@
   "name": "@mohanrupa/react-native-keep-awake",
   "version": "1.0.3",
   "description": "Keep the screen from going to sleep. iOS, Android and Web.",
-  "main": "build/index",
+  "main": "build/index.js",
   "scripts": {
     "compile": "tsc --noUnusedParameters --noUnusedLocals",
     "pretest": "npm run compile"

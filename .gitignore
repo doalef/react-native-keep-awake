@@ -13,3 +13,5 @@ captures/
 # iOS
 xcuserdata/
 *.xcworkspace/
+
+node_modules/

@@ -1,22 +1,22 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { NativeModules } from "react-native";
 
-export const activateKeepAwake = () => {
+export const activateKeepAwake = (): void => {
   NativeModules.KCKeepAwake.activate();
 };
 
-export const deactivateKeepAwake = () => {
+export const deactivateKeepAwake = (): void => {
   NativeModules.KCKeepAwake.deactivate();
 };
 
-export const useKeepAwake = () => {
+export const useKeepAwake = (): void => {
   useEffect(() => {
     activateKeepAwake();
     return deactivateKeepAwake;
   }, []);
 };
 
-export default () => {
+const KeepAwake = () => {
   useEffect(() => {
     activateKeepAwake();
     return deactivateKeepAwake;
@@ -24,3 +24,5 @@ export default () => {
 
   return null;
 };
+
+export default KeepAwake;

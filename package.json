@@ -1,5 +1,5 @@
 {
-  "name": "@mohanrupa/react-native-keep-awake",
+  "name": "@doalef/react-native-keep-awake",
   "version": "1.0.3",
   "description": "Keep the screen from going to sleep. iOS, Android and Web.",
   "main": "src/index.ts",
